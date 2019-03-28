@@ -165,7 +165,7 @@ nav.menu-hamburger{
         font-weight: 900;
     }
     .fresh{
-        width: 30%;
+        width: 40%;
         margin: 0;
     }
     .fresh p{
@@ -173,6 +173,14 @@ nav.menu-hamburger{
     }
     .fresh .btn-free{
         font-size: 1.5rem;
+    }
+    .logo-top figure img{
+        padding: 0 0 0 2rem;
+        width: 7rem;
+    }
+    nav.menu-hamburger{
+        font-size: 2rem;
+        padding: 0 5rem 0 0;
     }
 }
 
