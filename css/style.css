@@ -78,6 +78,10 @@ nav.menu-hamburger{
     padding: 0 10% 0 0;
 }
 
+nav.menu-hamburger .fas{
+    border: none;
+}
+
 .section1{
     background-image: url(../img/strawberry.png);
     height: 100vh;
@@ -150,6 +154,9 @@ nav.menu-hamburger{
   }
 
   @media screen and (max-width:790px){
+    header{
+        padding: 0;
+    }
     h1{
         font-size: 5rem;
         font-weight: 900;
@@ -245,7 +252,7 @@ nav.menu-hamburger{
         display: block;
     }
     .plate{
-    width: 90vw;
+    width: 30vw;
     margin: 0 auto;
     }
     .about-us{
