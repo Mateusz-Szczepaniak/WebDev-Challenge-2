@@ -157,6 +157,9 @@ nav.menu-hamburger .fas{
     header{
         padding: 0;
     }
+    .logo-top{
+        padding: 0 0 0 5%;
+    }
     h1{
         font-size: 5rem;
         font-weight: 900;
@@ -181,13 +184,13 @@ nav.menu-hamburger .fas{
     }
     nav.menu-hamburger{
         font-size: 2rem;
-        padding: 0 5rem 0 0;
+        padding: 0;
     }
 }
 
 @media screen and (max-width:1154px){
     nav.menu{
-        display:none;
+        display: none;
     }
 }
 
