@@ -257,3 +257,91 @@ nav.menu-hamburger{
         font-size: 4rem;
     }
 }
+
+.section3{
+    background-color: #70bfff;
+    display: flex;
+    
+}
+
+.information{
+    width: 50%;
+    padding: 5rem 0;
+}
+
+.information div{
+    width: 50%;
+    background-color: #fff;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.information div:hover{
+    background-color: #f7f3f3;
+}
+
+.information div p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    width: 70%;
+}
+
+.fas{
+    font-size: 4.5rem;
+    border-left: 1px solid #9d9d9d;
+    line-height: 10rem;
+    padding: 0 2rem;
+    width: 10rem;
+}
+
+.our-services{
+    background-image: url(../img/tomato.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    margin: 5rem 0rem;
+}
+
+.tomato{
+    padding: 20rem 0rem 0rem 0;
+    font-size: 9rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1154px){
+    .information div{
+        width: 70%;
+    }
+    .tomato{
+    font-size: 6.5rem;
+    }
+    .information div p{
+    font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:790px){
+    .section3{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .information{
+        width: 100%;
+        padding: 0 0 5rem 0;
+    }
+    .our-services{
+        width: 100%;
+        align-items: center;
+    }
+    .tomato{
+        padding: 2rem 0rem 2rem 0;
+    }
+}
