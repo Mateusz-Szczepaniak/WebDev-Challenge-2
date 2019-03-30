@@ -21,6 +21,10 @@ h2{
     font-weight: 900;
 }
 
+h3{
+    font-size: 4rem;
+}
+
 p{
     font-size: 2rem;
 }
@@ -34,11 +38,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0 0 0;
+    padding: 2rem 0 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .logo-top{
@@ -112,10 +117,11 @@ nav.menu-hamburger .fas{
     border: none;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .btn-free:hover{
-    opacity: .9;
+    opacity: .8;
 }
 
 .mouse-scroll{
@@ -191,6 +197,9 @@ nav.menu-hamburger .fas{
 @media screen and (max-width:1154px){
     nav.menu{
         display: none;
+    }
+    header{
+        background-color: transparent;
     }
 }
 
@@ -288,10 +297,11 @@ nav.menu-hamburger .fas{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: 0.5s;
 }
 
 .information div:hover{
-    background-color: #f7f3f3;
+    background-color: #e2dbdb;
 }
 
 .information div p{
@@ -316,6 +326,11 @@ nav.menu-hamburger .fas{
     background-position: center;
     width: 50%;
     margin: 5rem 0rem;
+    font-size: 3rem;
+}
+
+.our-services h2{
+    font-size: 7rem;
 }
 
 .tomato{
@@ -350,6 +365,9 @@ nav.menu-hamburger .fas{
     .our-services{
         width: 100%;
         align-items: center;
+    }
+    .our-services h2{
+        font-size: 5rem;
     }
     .tomato{
         padding: 2rem 0rem 2rem 0;
@@ -461,11 +479,11 @@ nav.menu-hamburger .fas{
     font-weight: 300;
     cursor: pointer;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-    
+    transition: 0.5s;
 }
 
 .view-more-btn:hover{
-    opacity: .9;
+    opacity: .8;
 }
 
 @media screen and (max-width:1050px) and (orientation: landscape){
@@ -573,5 +591,233 @@ nav.menu-hamburger .fas{
         background-clip: content-box;
         background-position: center;
         padding: 1rem;
+    }
+}
+
+.section5{
+    background-image: url(../img/blueberries.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 75% center;
+}
+
+.section5 h3{
+    padding: 10rem 0 2rem 15%;
+}
+
+.section5 p{
+    padding: 0 0 2rem 15%;
+    width: 40%;
+    color: #999;
+    font-size: 1.7rem;
+}
+
+.section5 input{
+    font-size: 1.5rem;
+    border: 1px solid #000;
+    padding: 1.2rem 2rem;
+    width: 25%;
+    margin: 0 5rem 10rem 15%;
+    color: #999;
+}
+
+.section5 button.subscribe{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #96b92c;
+    color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section5 button.subscribe:hover{
+    opacity: .8;
+}
+
+@media screen and (max-width:1050px){
+    .section5{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blueberries.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 0 0 5rem 0;
+    }
+    .section5 h3{
+        padding: 5rem 0 2rem 0;
+        margin: 0 auto;
+        width: 100%;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+    .section5 p{
+        padding: 2rem 1rem;
+        margin: 0 auto;
+        width: 60%;
+        color: #fff;
+        text-align: center;
+    }
+    .section5 input{
+        padding: 1.2rem 2rem;
+        width: 30rem;
+        margin: 2rem auto;
+        display: block;
+    }
+    .section5 button.subscribe{
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.section6{
+    padding: 2rem;
+    background-color: #b07cf7;
+    padding: 6rem 0;
+}
+
+.section6 h2{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section6 p{
+    width: 40%;
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #f5eefe;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.blog1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45rem;
+    height: 40rem;
+    background-image: url(../img/blog1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin: 2rem;
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
+}
+
+.blog2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45rem;
+    height: 40rem;
+    background-image: url(../img/blog2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin: 2rem;
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
+}
+
+.blog3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45rem;
+    height: 40rem;
+    background-image: url(../img/blog3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin: 2rem;
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
+}
+
+.blog1 .blog-date, .blog2 .blog-date, .blog3 .blog-date{
+    width: 6rem;
+    margin: 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    padding: .5rem;
+}
+
+.blog1 .blog-title, .blog2 .blog-title, .blog3 .blog-title{
+    width: 100%;
+    height: 20rem;
+    padding: 11rem 3rem;
+    margin: 0;
+    display: block;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 700;
+    box-shadow: inset 0rem -12rem 2rem -2rem rgba(0,0,0,0.7);
+}
+
+.blog-title span{
+ display: block;
+ 
+ font-size: 1.5rem;
+ padding: 1rem 0 0 0;
+ font-weight: 300;
+ color: #b4b4b4;
+}
+
+.btn-blog{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2.5rem;
+    background-color: #5585a2;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.btn-blog:hover{
+    opacity: .8;
+}
+
+@media screen and (max-width:1050px){
+    .blog{
+        flex-direction: column;
+    }
+    .blog1, .blog2, .blog3{
+        margin: 2rem auto;
+    }
+    .section6 p{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .blog{
+        flex-direction: column;
+    }
+    .blog1, .blog2, .blog3{
+        margin: 1rem auto;
+        width: 30rem;
+        height: auto;
+    }
+    .section6 p{
+        width: 80%;
     }
 }
