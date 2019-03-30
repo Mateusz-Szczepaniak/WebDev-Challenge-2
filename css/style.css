@@ -1,823 +1,145 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-    font-family: 'Raleway', sans-serif;
-    font-size: 10px;
-}
-
-h1{
-    font-size: 7rem;
-    font-weight: 900;
-}
-
-h2{
-    font-size: 6rem;
-    font-weight: 900;
-}
-
-h3{
-    font-size: 4rem;
-}
-
-p{
-    font-size: 2rem;
-}
-
-.wrap{
-    width: 100%;
-    margin: 0 auto;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0 1rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.logo-top{
-    padding: 0 0 0 10%;
-    width: 100%;
-    height: auto;
-}
-
-nav.menu{
-    padding: 0 10% 0 0;
-}
-
-nav.menu ul{
-    display: flex;
-}
-
-nav.menu ul li{
-    list-style: none;
-}
-
-nav.menu ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin: 1rem 2rem;
-    padding: .5rem 0 0 0;
-}
-
-nav.menu ul li a:hover{
-    border-top: 2px solid #ff0000;
-}
-
-nav.menu-hamburger{
-    font-size: 4rem;
-    padding: 0 10% 0 0;
-}
-
-nav.menu-hamburger .fas{
-    border: none;
-}
-
-.section1{
-    background-image: url(../img/strawberry.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.fresh{
-    width: 30%;
-    margin: 0 30% 0 0;
-}
-
-.fresh p{
-    margin: 3rem 0;
-}
-
-.btn-free{
-    padding: 1.5rem 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-size: 1.7rem;
-    color: #fff;
-    background-color: #ff6033;
-    border: none;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-free:hover{
-    opacity: .8;
-}
-
-.mouse-scroll{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-}
-
-.mouse-scroll figure img{
-    width: 2%;
-    height: auto;
-    min-width: 25px;
-    max-width: 30px;
-    display: block;
-}
-
-.slide-bottom {
-	animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite alternate forwards;
-}
-
- @-webkit-keyframes slide-bottom {
-    0% {
-            transform: translateY(0);
-    }
-    100% {
-            transform: translateY(100px);
-    }
-  }
-  @keyframes slide-bottom {
-    0% {
-            transform: translateY(0);
-    }
-    100% {
-            transform: translateY(30px);
-    }
-  }
-
-  @media screen and (max-width:790px){
-    header{
-        padding: 0;
-    }
-    .logo-top{
-        padding: 0 0 0 5%;
-    }
-    h1{
-        font-size: 5rem;
-        font-weight: 900;
-    }
-    .fresh{
-        width: 90%;
-        margin: 0;
-        text-align: center;
-    }
-    .fresh p{
-        font-size: 1.5rem;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 1rem 0;
-    }
-    .fresh .btn-free{
-        font-size: 1.5rem;
-    }
-    .logo-top figure img{
-        padding: 0 0 0 2rem;
-        width: 7rem;
-    }
-    nav.menu-hamburger{
-        font-size: 2rem;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width:1154px){
-    nav.menu{
-        display: none;
-    }
-    header{
-        background-color: transparent;
-    }
-}
-
-@media screen and (min-width:1155px){
-    nav.menu-hamburger{
-        display: none;
-    }
-}
-
-.section2{
-    background-color: #00b1b1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 3rem 0;
-}
-
-.plate{
-    width: 50vw;
-    padding: 0 12rem;
-}
-
-.plate figure img{
-    width: 100%;
-    height: auto;
-}
-
-.about-us{
-    width: 50vw;
-    padding: 0 12rem;
-    color: #fff;
-}
-
-.about-us P{
-    padding: 1rem 0;
-}
-
-.about-us h2{
-    margin: 0 0 5rem 0;
-    font-weight: 700;
-    font-size: 8rem;
-}
-
-@media screen and (max-width:1154px){
-    .plate{
-        width: 70vw;
-        padding: 0 0rem;
-        }
-        .about-us{
-            width: 100vw;
-            padding: 0 7rem;
-            text-align: center;
-        }
-        .about-us h2{
-            font-size: 5rem;
-        }
-}
-
-@media screen and (max-width:790px){
-    .section2{
-        display: block;
-    }
-    .plate{
-    width: 30vw;
-    margin: 0 auto;
-    }
-    .about-us{
-        width: 100vw;
-        padding: 0 2rem;
-        text-align: center;
-    }
-    .about-us h2{
-        font-size: 4rem;
-    }
-}
-
-.section3{
-    background-color: #70bfff;
-    display: flex;
-    
-}
-
-.information{
-    width: 50%;
-    padding: 5rem 0;
-}
-
-.information div{
-    width: 50%;
-    background-color: #fff;
-    margin: 2rem auto;
-    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.information div:hover{
-    background-color: #e2dbdb;
-}
-
-.information div p{
-    font-size: 2.2rem;
-    font-weight: 700;
-    padding: 0 2rem;
-    width: 70%;
-}
-
-.fas{
-    font-size: 4.5rem;
-    border-left: 1px solid #9d9d9d;
-    line-height: 10rem;
-    padding: 0 2rem;
-    width: 10rem;
-}
-
-.our-services{
-    background-image: url(../img/tomato.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 50%;
-    margin: 5rem 0rem;
-    font-size: 3rem;
-}
-
-.our-services h2{
-    font-size: 7rem;
-}
-
-.tomato{
-    padding: 20rem 0rem 0rem 0;
-    font-size: 9rem;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-}
-
-@media screen and (max-width:1154px){
-    .information div{
-        width: 70%;
-    }
-    .tomato{
-    font-size: 6.5rem;
-    }
-    .information div p{
-    font-size: 2rem;
-    }
-}
-
-@media screen and (max-width:790px){
-    .section3{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .information{
-        width: 100%;
-        padding: 0 0 5rem 0;
-    }
-    .our-services{
-        width: 100%;
-        align-items: center;
-    }
-    .our-services h2{
-        font-size: 5rem;
-    }
-    .tomato{
-        padding: 2rem 0rem 2rem 0;
-    }
-}
-
-@media screen and (min-width:1051px){
-.section4{
-    background-color: #ffe92f;
-    height: 130vh;
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gallery-top{
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.gallery-big{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    width: 70%;
-    height: 80%;
-    margin: 0 auto;
-}
-
-.gallery-big .photo1 {
-    min-width: 65%;
-    max-width: 65%;
-    height: 65%;
-    background-image: url(../img/photo1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position: center;
-    padding: 1rem;
-}
-
-.gallery-big .photo2 {
-    min-width: 35%;
-    max-width: 35%;
-    height: 65%;
-}
-
-.gallery-big .photo2 .photo2-1 {
-    height: 50%;
-    background-image: url(../img/photo2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position: center;
-    padding: 1rem;
-}
-
-.gallery-big .photo2 .photo2-2 {
-    height: 50%;
-    background-image: url(../img/photo3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position: center;
-    padding: 1rem;
-}
-
-.gallery-big .photo3 {
-    min-width: 50%;
-    max-width: 50%;
-    height: 35%;
-    background-image: url(../img/photo4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position: center;
-    padding: 1rem;
-}
-
-.gallery-big .photo4 {
-    min-width: 50%;
-    max-width: 50%;
-    height: 35%;
-    background-image: url(../img/photo5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    background-position: center;
-    padding: 1rem;
-}
-}
-
-.view-more{
-    text-align: center;
-}
-
-.view-more-btn{
-    margin: 0 auto;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    padding: 1.5rem 2.5rem;
-    background-color: #5585a2;
-    border: none;
-    color: #fff;
-    font-weight: 300;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-    transition: 0.5s;
-}
-
-.view-more-btn:hover{
-    opacity: .8;
-}
-
-@media screen and (max-width:1050px) and (orientation: landscape){
-    .section4{
-        background-color: #ffe92f;
-        height: 300vh;
-        padding: 5rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .gallery-top{
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:1050px) and (orientation: portrait){
-    .section4{
-        background-color: #ffe92f;
-        height: 150vh;
-        padding: 5rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .gallery-top{
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-    }
-}
-
-    @media screen and (max-width:1050px){
-    .gallery-small{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding: 5rem;
-        width: 100%;
-        height: 80%;
-        margin: 0 auto;
-    }
-    
-    .gallery-small .photo1 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 100%;
-        background-image: url(../img/photo1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position: center;
-        padding: 1rem;
-    }
-    
-    .gallery-small .photo2-1 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 100%;
-        background-image: url(../img/photo2.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position: center;
-        padding: 1rem;
-    }
-    
-    .gallery-small .photo2-2 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 100%;
-        background-image: url(../img/photo3.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position: center;
-        padding: 1rem;
-    }
-    
-    .gallery-small .photo3 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 100%;
-        background-image: url(../img/photo4.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position: center;
-        padding: 1rem;
-    }
-    
-    .gallery-small .photo4 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 100%;
-        background-image: url(../img/photo5.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position: center;
-        padding: 1rem;
-    }
-}
-
-.section5{
-    background-image: url(../img/blueberries.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 75% center;
-}
-
-.section5 h3{
-    padding: 10rem 0 2rem 15%;
-}
-
-.section5 p{
-    padding: 0 0 2rem 15%;
-    width: 40%;
-    color: #999;
-    font-size: 1.7rem;
-}
-
-.section5 input{
-    font-size: 1.5rem;
-    border: 1px solid #000;
-    padding: 1.2rem 2rem;
-    width: 25%;
-    margin: 0 5rem 10rem 15%;
-    color: #999;
-}
-
-.section5 button.subscribe{
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    border: none;
-    background-color: #96b92c;
-    color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.section5 button.subscribe:hover{
-    opacity: .8;
-}
-
-@media screen and (max-width:1050px){
-    .section5{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blueberries.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        padding: 0 0 5rem 0;
-    }
-    .section5 h3{
-        padding: 5rem 0 2rem 0;
-        margin: 0 auto;
-        width: 100%;
-        color: #fff;
-        display: block;
-        text-align: center;
-    }
-    .section5 p{
-        padding: 2rem 1rem;
-        margin: 0 auto;
-        width: 60%;
-        color: #fff;
-        text-align: center;
-    }
-    .section5 input{
-        padding: 1.2rem 2rem;
-        width: 30rem;
-        margin: 2rem auto;
-        display: block;
-    }
-    .section5 button.subscribe{
-        padding: 1rem 2rem;
-        margin: 0 auto;
-        display: block;
-    }
-}
-
-.section6{
-    padding: 2rem;
-    background-color: #b07cf7;
-    padding: 6rem 0;
-}
-
-.section6 h2{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 700;
-    color: #fff;
-}
-
-.section6 p{
-    width: 40%;
-    display: block;
-    margin: 3rem auto;
-    text-align: center;
-    font-size: 1.7rem;
-    color: #f5eefe;
-}
-
-.blog{
-    display: flex;
-    justify-content: center;
-    margin: 4rem 0;
-}
-
-.blog1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 45rem;
-    height: 40rem;
-    background-image: url(../img/blog1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    margin: 2rem;
-    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
-}
-
-.blog2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 45rem;
-    height: 40rem;
-    background-image: url(../img/blog2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    margin: 2rem;
-    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
-}
-
-.blog3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 45rem;
-    height: 40rem;
-    background-image: url(../img/blog3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    margin: 2rem;
-    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
-}
-
-.blog1 .blog-date, .blog2 .blog-date, .blog3 .blog-date{
-    width: 6rem;
-    margin: 3rem;
-    font-size: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10%;
-    padding: .5rem;
-}
-
-.blog1 .blog-title, .blog2 .blog-title, .blog3 .blog-title{
-    width: 100%;
-    height: 20rem;
-    padding: 11rem 3rem;
-    margin: 0;
-    display: block;
-    font-size: 2rem;
-    text-align: left;
-    font-weight: 700;
-    box-shadow: inset 0rem -12rem 2rem -2rem rgba(0,0,0,0.7);
-}
-
-.blog-title span{
- display: block;
- 
- font-size: 1.5rem;
- padding: 1rem 0 0 0;
- font-weight: 300;
- color: #b4b4b4;
-}
-
-.btn-blog{
-    display: block;
-    margin: 0 auto;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    padding: 1.5rem 2.5rem;
-    background-color: #5585a2;
-    border: none;
-    color: #fff;
-    font-weight: 300;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-    transition: 0.5s;
-}
-
-.btn-blog:hover{
-    opacity: .8;
-}
-
-@media screen and (max-width:1050px){
-    .blog{
-        flex-direction: column;
-    }
-    .blog1, .blog2, .blog3{
-        margin: 2rem auto;
-    }
-    .section6 p{
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:500px){
-    .blog{
-        flex-direction: column;
-    }
-    .blog1, .blog2, .blog3{
-        margin: 1rem auto;
-        width: 30rem;
-        height: auto;
-    }
-    .section6 p{
-        width: 80%;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebDev Challenge 2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>
+                <div class="logo-top">
+                    <figure>
+                        <a href="/"><img src="img/logo.png" alt="Cahee"></a>
+                    </figure>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="menu-hamburger">
+                        <span class="fas fa-bars"></span>
+                </nav>
+        </header>
+    <div class="wrap">
+            <section class="section1">
+                <div class="fresh">
+                    <h1>Fresh Life</h1>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <button class="btn-free">get free now</button>
+                </div>
+                <div class="mouse-scroll slide-bottom">
+                    <figure>
+                        <img src="img/mouse-scroll.png" alt="Scroll down">
+                    </figure>
+                </div>
+            </section>
+        <section class="section2">
+            <div class="plate">
+                <figure>
+                    <img src="img/plate.png" alt="Strawberries on the plate">
+                </figure>
+            </div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <p> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="information">
+                <div>
+                    <p>Online Shopping</p><span class="fas fa-shopping-cart"></span>
+                </div>
+                <div>
+                    <p>Quality Product</p><span class="fas fa-seedling"></span>
+                </div>
+                <div>
+                    <p>Domestic & International Delivery</p><span class="fas fa-globe-americas"></span>
+                </div>
+                <div>
+                    <p>Well Organized</p><span class="fas fa-carrot"></span>
+                </div>
+            </div>
+            <div class="our-services">
+                <h2 class="tomato">Our Services</h2>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="gallery-top">
+                <h2>Gallery</h2>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="gallery-big">
+                    <div class="photo1"></div>
+                    <div class="photo2">
+                        <div class="photo2-1"></div>
+                        <div class="photo2-2"></div>
+                    </div>
+                    <div class="photo3"></div>
+                    <div class="photo4"></div>
+            </div>
+            <div class="gallery-small">
+                    <div class="photo1"></div>
+                    <div class="photo2-1"></div>
+                    <div class="photo2-2"></div>
+                    <div class="photo3"></div>
+                    <div class="photo4"></div>
+            </div>
+            <div class="view-more">
+                <button class="view-more-btn">view more</button>
+            </div>
+        </section>
+        <section class="section5">
+            <h3>Subscribe To Us</h3>
+            <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <input type="email" name="email" placeholder="Your email adress...">
+                <button class="subscribe" required>Subscribe</button>
+        </section>
+        <section class="section6">
+            <h2>Blog</h2>
+            <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <div class="blog">
+                <div class="blog1">
+                    <p class="blog-date">20 nov</p>
+                    <p class="blog-title"><a href="#">Green Smoothies: Too Much of a Good Thing?</a><span>By Auskteez - 2 hours ago</span></p>
+                </div>
+                <div class="blog2">
+                    <p class="blog-date">14 nov</p>
+                    <p class="blog-title"><a href="#">Growing Food and a “Thirst” for Innovation</a><span>By Auskteez - 3 hours ago</span></p>
+                </div>
+                <div class="blog3">
+                    <p class="blog-date">10 nov</p>
+                    <p class="blog-title"><a href="#">Pesticides & Food: What You Need to Know</a><span>By Auskteez - 6 hours ago</span></p>
+                </div>
+            </div>
+            <button class="btn-blog">view more</button>
+        </section>
+        <section></section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
