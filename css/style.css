@@ -299,11 +299,12 @@ nav.menu-hamburger .fas{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    transition: 0.5s;
+    transition: all .2s ease-in-out;
 }
 
 .information div:hover{
     background-color: #e2dbdb;
+    transform: scale(1.1); 
 }
 
 .information div p{
@@ -749,6 +750,14 @@ nav.menu-hamburger .fas{
     box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.5);
 }
 
+.blog1, .blog2, .blog3 {
+    transition: all .2s ease-in-out;
+}
+
+.blog1:hover, .blog2:hover, .blog3:hover{ 
+    transform: scale(1.1); 
+}
+
 .blog1 .blog-date, .blog2 .blog-date, .blog3 .blog-date{
     width: 6rem;
     margin: 3rem;
@@ -880,6 +889,7 @@ nav.menu-hamburger .fas{
 
 .contact-form form input:focus, .contact-form form textarea:focus{
     border-left: 5px solid #355b82;
+    background-color: rgb(0, 193, 193);
 }
 
 .contact-form form input::placeholder, .contact-form form textarea::placeholder{
@@ -959,6 +969,11 @@ footer p{
     font-size: 1.6rem;
 }
 
+footer a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
 footer p span{
     color: #ff0000
 }
@@ -971,4 +986,12 @@ footer p span{
     footer p, footer img{
         padding: 2rem 0 0 0;
     }
+}
+
+footer a img{
+    transition: all .2s ease-in-out;
+}
+
+footer a img:hover{ 
+    transform: scale(1.1); 
 }
