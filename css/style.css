@@ -37,7 +37,7 @@ p{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     padding: 2rem 0 1rem 0;
     position: fixed;
     top: 0;
@@ -53,7 +53,7 @@ header{
 }
 
 nav.menu{
-    padding: 0 10% 0 0;
+    padding: 0.7% 10% 0 0;
 }
 
 nav.menu ul{
@@ -78,14 +78,69 @@ nav.menu ul li a:hover{
     border-top: 2px solid #ff0000;
 }
 
-nav.menu-hamburger{
-    font-size: 4rem;
-    padding: 0 10% 0 0;
+div.menu-hamburger{
+    font-size: 2rem;
 }
 
-nav.menu-hamburger .fas{
+div.menu-hamburger .fas{
     border: none;
+    line-height: 4rem;
 }
+
+.hamburger{
+    display: block;
+    padding: 0;
+  }
+  
+  .hamburger label, .hamburger ul li{
+    display: block;
+    width: 90px;
+  }
+  .hamburger label:hover, .hamburger ul li:hover{
+    background: transparent;
+    cursor: pointer;
+  }
+  .hamburger label{
+    position: relative;
+    z-index: 2;
+  }
+  .hamburger input{
+    display: none;
+  }
+  .hamburger input ~ ul{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+    z-index: 1;
+  }
+  .hamburger input:checked + label{
+    color: #ff0000;
+  }
+  
+  .hamburger input:checked ~ ul{
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+  
+  .animate{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;  
+    backface-visibility: hidden;
+  }
+  
+  .animate a{
+      text-decoration: none;
+      color: #000;
+  }
+  
+  .animate a:hover{
+      color: #ff0000;
+  }
 
 .section1{
     background-image: url(../img/strawberry.png);
@@ -163,6 +218,7 @@ nav.menu-hamburger .fas{
   @media screen and (max-width:790px){
     header{
         padding: 0;
+        margin: 3% 0 0 0;
     }
     .logo-top{
         padding: 0 0 0 5%;
@@ -190,7 +246,7 @@ nav.menu-hamburger .fas{
         padding: 0 0 0 2rem;
         width: 7rem;
     }
-    nav.menu-hamburger{
+    div.menu-hamburger{
         font-size: 2rem;
         padding: 0;
     }
@@ -206,7 +262,7 @@ nav.menu-hamburger .fas{
 }
 
 @media screen and (min-width:1155px){
-    nav.menu-hamburger{
+    div.menu-hamburger{
         display: none;
     }
 }
