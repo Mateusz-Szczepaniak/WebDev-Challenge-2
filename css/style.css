@@ -37,7 +37,6 @@ p{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: top;
     padding: 2rem 0 1rem 0;
     position: fixed;
     top: 0;
